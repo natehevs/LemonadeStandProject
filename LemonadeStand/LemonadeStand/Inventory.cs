@@ -24,12 +24,49 @@ namespace LemonadeStand
 
         public void DisplayInventory()
         {
-
+            Console.WriteLine("Here is your current inventory.");
+            
         }
 
         public void MeltRemainingIce()
         {
+            
+        }
 
+        public void DisplayLemons(int userInput)
+        {
+            for (int i = 0; i < userInput; i++)
+            {
+                Lemon lemon = new Lemon();
+                lemons.Add(lemon);
+            }
+        }
+
+        public void DisplayIce(int userInput)
+        {
+            for (int i = 0; i < userInput; i++)
+            {
+                IceCube ice = new IceCube();
+                iceCubes.Add(ice);
+            }
+        }
+
+        public void DisplaySugar(int userInput)
+        {
+            for (int i = 0; i < userInput; i++)
+            {
+                SugarCube sugar = new SugarCube();
+                sugarCubes.Add(sugar);
+            }
+        }
+
+        public void DisplayCups(int userInput)
+        {
+            for (int i = 0; i < userInput; i++)
+            {
+                Cup cup = new Cup();
+                cups.Add(cup);
+            }
         }
     }
 }

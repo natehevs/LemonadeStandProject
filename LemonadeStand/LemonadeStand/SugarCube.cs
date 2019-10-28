@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class SugarCube: Item
+    class SugarCube
     {
         public SugarCube()
         {
