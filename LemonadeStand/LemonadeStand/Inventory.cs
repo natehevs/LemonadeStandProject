@@ -25,6 +25,10 @@ namespace LemonadeStand
         public void DisplayInventory()
         {
             Console.WriteLine("Here is your current inventory.");
+            Console.WriteLine(lemons.Count);
+            Console.WriteLine(iceCubes.Count);
+            Console.WriteLine(cups.Count);
+            Console.WriteLine(sugarCubes.Count);
             
         }
 
@@ -32,8 +36,8 @@ namespace LemonadeStand
         {
             
         }
-
-        public void DisplayLemons(int userInput)
+   
+        public void AddLemons(int userInput)
         {
             for (int i = 0; i < userInput; i++)
             {
@@ -42,7 +46,7 @@ namespace LemonadeStand
             }
         }
 
-        public void DisplayIce(int userInput)
+        public void AddIce(int userInput)
         {
             for (int i = 0; i < userInput; i++)
             {
@@ -51,7 +55,7 @@ namespace LemonadeStand
             }
         }
 
-        public void DisplaySugar(int userInput)
+        public void AddSugar(int userInput)
         {
             for (int i = 0; i < userInput; i++)
             {
@@ -60,7 +64,7 @@ namespace LemonadeStand
             }
         }
 
-        public void DisplayCups(int userInput)
+        public void AddCups(int userInput)
         {
             for (int i = 0; i < userInput; i++)
             {

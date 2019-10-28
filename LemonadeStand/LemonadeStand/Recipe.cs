@@ -23,5 +23,10 @@ namespace LemonadeStand
         {
 
         }
+
+        public void DisplayRecipe()
+        {
+
+        }
     }
 }
