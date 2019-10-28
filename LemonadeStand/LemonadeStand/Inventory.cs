@@ -16,6 +16,19 @@ namespace LemonadeStand
 
         public Inventory()
         {
+            lemons = new List<Lemon>();
+            iceCubes = new List<IceCube>();
+            cups = new List<Cup>();
+            sugarCubes = new List<SugarCube>();
+        }
+
+        public void DisplayInventory()
+        {
+
+        }
+
+        public void MeltRemainingIce()
+        {
 
         }
     }

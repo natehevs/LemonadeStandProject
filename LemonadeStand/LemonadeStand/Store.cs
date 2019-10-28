@@ -16,6 +16,16 @@ namespace LemonadeStand
 
         public Store()
         {
+            
+        }
+
+        public void DisplayStoreOptions()
+        {
+
+        }
+
+        public void SubtractMoney()
+        {
 
         }
     }

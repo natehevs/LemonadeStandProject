@@ -15,6 +15,11 @@ namespace LemonadeStand
 
         public Weather()
         {
+            weatherConditions = new List<string>();
+        }
+
+        public void DisplayWeather()
+        {
 
         }
     }
