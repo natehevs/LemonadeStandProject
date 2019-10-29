@@ -36,6 +36,7 @@ namespace LemonadeStand
          */
 
         //Has A
+        private Customer customer;
         private Player player;
         private List<Day> days;
         private int currentDay;
@@ -43,6 +44,7 @@ namespace LemonadeStand
         {
             //Builder
 
+            customer = new Customer();
             player = new Player();
             days = new List<Day>();
 
@@ -54,7 +56,8 @@ namespace LemonadeStand
         {
             DisplayName();
             DisplayRules();
-            DisplayInventory();
+            player.inventory.DisplayInventory();
+            customer.FindThirstLevel();
         }
 
         public void DisplayName()

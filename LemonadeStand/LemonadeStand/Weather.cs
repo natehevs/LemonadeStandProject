@@ -41,11 +41,5 @@ namespace LemonadeStand
             temperature = random.Next(40, 90);
         }
 
-        private void CreatePredictedCondition()
-        {
-            Random random = new Random();
-            int index = random.Next(weatherConditions.Count);
-            predictedCondition = weatherConditions[index];
-        }
     }
 }
