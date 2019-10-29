@@ -18,19 +18,19 @@ namespace LemonadeStand
             names = new List<string>();;
         }
 
-        public void FindThirstLevel()
+        public void FindThirstLevel(Weather weather)
         {
-            if (Weather.temperature >= 40 && Weather.temperature <= 60)
+            if (weather.temperature >= 40 && weather.temperature <= 60)
             {
-                Weather.weatherConditions = "Cloudy";
+                weather.condition = "Cloudy";
             }
-            else if (Weather.temperature >= 61 && Weather.temperature <= 70)
+            else if (weather.temperature >= 61 && weather.temperature <= 70)
             {
-                Weather.weatherConditions = "Raining";
+                weather.condition = "Raining";
             }
             else
             {
-                Weather.weatherConditions = "Sunny";
+                weather.condition = "Sunny";
             }
         }
     }
