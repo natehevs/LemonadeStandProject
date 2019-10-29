@@ -20,6 +20,7 @@ namespace LemonadeStand
             iceCubes = new List<IceCube>();
             cups = new List<Cup>();
             sugarCubes = new List<SugarCube>();
+
         }
 
         public void DisplayInventory()

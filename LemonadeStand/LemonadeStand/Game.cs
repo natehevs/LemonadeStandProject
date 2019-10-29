@@ -52,13 +52,20 @@ namespace LemonadeStand
 
         public void RunGame()
         {
+            DisplayName();
             DisplayRules();
+            DisplayInventory();
+        }
 
+        public void DisplayName()
+        {
+            Console.WriteLine("Welcome to the Lemonade Stand Game! What is your name?");
+            Console.ReadLine();
         }
 
         public void DisplayRules()
         {
-            Console.WriteLine("Welcome to the Lemonade Stand Game! In this game you will be running your own lemonade stand. You will need to buy items from the shop and create a recipe to sell from. Keep in mind the weather can have an affect on your sales along with the recipe.");
+            Console.WriteLine("In this game you will be running your own lemonade stand. You will need to buy items from the shop and create a recipe to sell from. Keep in mind the weather can have an affect on your sales along with the recipe.");
 
         }
 

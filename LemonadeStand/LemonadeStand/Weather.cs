@@ -9,18 +9,43 @@ namespace LemonadeStand
     class Weather
     {
 
+        // member variables (HAS A)
+
         public string condition;
         public int temperature;
         private List<string> weatherConditions;
+        public string predictedCondition;
+
+
+        // constructor
 
         public Weather()
         {
-            weatherConditions = new List<string>();
+            weatherConditions = new List<string>() { "sunny", "raining", "cloudy" };
+            CreateWeather();
+            CreateTemperature();
         }
 
-        public void DisplayWeather()
-        {
 
+
+        private void CreateWeather()
+        {
+            Random random = new Random();
+            int index = random.Next(weatherConditions.Count);
+            condition = weatherConditions[index];
+        }
+
+        private void CreateTemperature()
+        {
+            Random random = new Random();
+            temperature = random.Next(40, 90);
+        }
+
+        private void CreatePredictedCondition()
+        {
+            Random random = new Random();
+            int index = random.Next(weatherConditions.Count);
+            predictedCondition = weatherConditions[index];
         }
     }
 }
