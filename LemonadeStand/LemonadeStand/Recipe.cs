@@ -8,6 +8,9 @@ namespace LemonadeStand
 {
     class Recipe
     {
+        //take in user input to set items per cup
+        //limit how many ice, sugar, lemons per cup
+        //
 
         public int amountOfLemons;
         public int amountOfSugarCubes;
@@ -21,6 +24,7 @@ namespace LemonadeStand
 
         public void CreateRecipe()
         {
+            string choice = Console.ReadLine();
 
         }
 

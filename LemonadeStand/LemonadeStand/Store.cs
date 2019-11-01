@@ -88,7 +88,7 @@ namespace LemonadeStand
                     break;
             }
         }
-
+        3
         public void BuyIce()
         {
             Console.WriteLine("Here are the different prices for Ice.");

@@ -57,7 +57,9 @@ namespace LemonadeStand
             DisplayName();
             DisplayRules();
             player.inventory.DisplayInventory();
+            day.weather;
             customer.FindThirstLevel();
+
         }
 
         public void DisplayName()
@@ -69,11 +71,6 @@ namespace LemonadeStand
         public void DisplayRules()
         {
             Console.WriteLine("In this game you will be running your own lemonade stand. You will need to buy items from the shop and create a recipe to sell from. Keep in mind the weather can have an affect on your sales along with the recipe.");
-
-        }
-
-        public void RunDay()
-        {
 
         }
 

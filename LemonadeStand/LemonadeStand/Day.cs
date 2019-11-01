@@ -14,6 +14,12 @@ namespace LemonadeStand
 
         public Day()
         {
+            weather = new Weather();
+            customers = new List<Customer>();
+        }
+
+        public void RunDay()
+        {
 
         }
     }
