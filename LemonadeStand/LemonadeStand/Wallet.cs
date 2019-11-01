@@ -15,5 +15,11 @@ namespace LemonadeStand
         {
 
         }
+
+        public void BuyItems()
+        {
+            cash -= cost;
+            Inventory.addItem();
+        }
     }
 }

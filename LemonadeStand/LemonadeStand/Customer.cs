@@ -10,6 +10,7 @@ namespace LemonadeStand
     {
 
         private List<string> names;
+        public int drinkPercentage;
         public string name;
         public string thirstLevel;
         public string high;
@@ -51,7 +52,15 @@ namespace LemonadeStand
 
         public void CustomerDetermineBuy()
         {
-
+            int drinkPercentage = 80;
+            for (int i = 0; i < 101; i++)
+            {
+                int randomValueBetween0And100 = Customer.thirstLevel(101);
+                if (randomValueBetween0And100 < drinkPercentage)
+                {
+                    
+                }
+            }
         }
     }
 }
